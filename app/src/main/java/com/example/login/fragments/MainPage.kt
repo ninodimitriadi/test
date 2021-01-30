@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.fragments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.login.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainPage : AppCompatActivity() {
@@ -19,7 +20,7 @@ class MainPage : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         val appBarConf = AppBarConfiguration(setOf(
-                R.id.navigation_home, R.id.navigation_person_room
+                R.id.navigation_home, R.id.navigationPersonRoom
         ))
 
         setupActionBarWithNavController(navController, appBarConf)

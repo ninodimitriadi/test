@@ -3,36 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/navigation_home">
+    app:startDestination="@id/navigationHome">
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.login.fragments.HomeFragment"
+        android:id="@+id/navigationHome"
         tools:layout="@layout/fragment_home"
+        android:name="com.example.login.fragments.HomeFragment"
         android:label="HomeFragment" />
     <fragment
-        android:id="@+id/navigation_person_room"
-        android:name="com.example.login.fragments.PersonRoom"
+        android:id="@+id/navigationPersonRoom"
         tools:layout="@layout/fragment_person_room"
-        android:label="PersonRoom" >
-        <action
-            android:id="@+id/action_navigation_person_room_to_passwordChangeActivity"
-            app:destination="@id/passwordChangeActivity" />
-        <action
-            android:id="@+id/action_navigation_person_room_to_mainActivity"
-            app:destination="@id/mainActivity" />
-
-
-
-
-    </fragment>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.login.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
-    <activity
-        android:id="@+id/passwordChangeActivity"
-        android:name="com.example.login.PasswordChangeActivity"
-        android:label="activity_password_change"
-        tools:layout="@layout/activity_password_change" />
+        android:name="com.example.login.fragments.PersonRoom"
+        android:label="PersonRoom" />
 </navigation>

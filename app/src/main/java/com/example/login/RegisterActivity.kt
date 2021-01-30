@@ -22,6 +22,7 @@ class RegisterActivity : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
+
         singUpEmailEditText = findViewById(R.id.signUpEmailEditText)
         signUpPasswordEditText = findViewById(R.id.signUpPasswordEditText)
         registerButton = findViewById(R.id.signUpButton)

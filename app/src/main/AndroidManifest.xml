@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LogIn">
-        <activity android:name=".MainPage"></activity>
+        <activity android:name=".fragments.MainPage"></activity>
         <activity android:name=".ResetActivity" />
         <activity android:name=".PasswordChangeActivity" />
         <activity android:name=".PersonActivity" />

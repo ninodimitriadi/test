@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.login.fragments.HomeFragment
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -47,7 +48,8 @@ class MainActivity : AppCompatActivity() {
             } else{
                 mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
                     if (task.isSuccessful){
-                        startActivity(Intent(this, MainPage::class.java))
+                        setContentView(R.layout.fragment_home)
+//                        startActivity(Intent(this, HomeFragment::class.java))
                         finish()
                     }else{
                         Toast.makeText(this,"ERROR!", Toast.LENGTH_LONG).show()
